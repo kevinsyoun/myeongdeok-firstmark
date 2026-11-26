@@ -79,6 +79,12 @@ td.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tbl--cmp thead th:last-child{background:var(--action)}
 .tbl--cmp tbody td:last-child{background:#fff8f2}
 .tbl--plain table{min-width:520px}
+.tbl--list table{min-width:560px}
+.tbl--list td:first-child{width:22%;white-space:nowrap;font-weight:700;color:#22384a}
+.tbl--list td.dot{font-weight:700}
+.tbl--list tr.sum td{background:#fff8f2;font-weight:800}
+img.img--sm{max-width:460px;margin:0 auto}
+img.img--port{max-width:600px;margin:0 auto}
 .note{font-size:12.5px;color:var(--muted);line-height:1.65;margin:10px 0 0}
 .pills{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 4px;padding:0;list-style:none}
 .pills li{background:#fff4ec;color:#8a3a10;border:1px solid #f3d4bf;border-radius:999px;padding:5px 12px;font-size:13px}
@@ -100,6 +106,7 @@ footer strong{color:#3d4f5d}
 .fixed .cta{margin:0;padding:13px 8px;font-size:14.5px;max-width:none}
 a:focus-visible,button:focus-visible{outline:3px solid #75411e;outline-offset:3px}
 @media(min-width:760px){
+  .stats{grid-template-columns:repeat(4,1fr)}
   .two{grid-template-columns:1fr 1fr}
   .quote-grid{grid-template-columns:1fr 1fr}
   .split{grid-template-columns:1fr 1fr}
@@ -349,7 +356,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #75411e;outline-offset:3p
   </div>
   <p class="note">1호·2호는 민간임대 공급 대상이 아니며, 민간임대는 117동 3호~7호 · 2층~19층(층당 3~7호, 18개 층)입니다.</p>
   <figure class="figure">
-    <img src="images/unit-layout.jpg" width="430" height="220" loading="lazy" alt="117동 층별 호수 배치 개념도 — 3호~6호 39㎡, 7호 41㎡">
+    <img class="img--sm" src="images/unit-layout.jpg" width="430" height="220" loading="lazy" alt="117동 층별 호수 배치 개념도 — 3호~6호 39㎡, 7호 41㎡">
     <figcaption>117동 3~7호 배치 개념도 (층당 구성)</figcaption>
   </figure>
   <figure class="figure">
@@ -378,7 +385,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #75411e;outline-offset:3p
   </div>
 
   <figure class="figure">
-    <img src="images/floorplan.jpg" width="1080" height="1512" loading="lazy" alt="39 TYPE과 41 TYPE 평면도 및 면적표">
+    <img class="img--port" src="images/floorplan.jpg" width="1080" height="1512" loading="lazy" alt="39 TYPE과 41 TYPE 평면도 및 면적표">
     <figcaption>제공 자료 · 39 TYPE(72세대) / 41 TYPE(18세대) 평면 및 면적</figcaption>
   </figure>
   <p class="note">※ 면적 및 평면 표기는 교육자료 기준이며, 계약 전 공시 자료를 확인하세요.</p>
@@ -420,18 +427,18 @@ a:focus-visible,button:focus-visible{outline:3px solid #75411e;outline-offset:3p
 
   <h3>반경 300m 더블역세권, 대구시 전체 0.5%</h3>
   <p class="lead">대구시 반경 300m 더블역세권 확보 9개 단지 — 대체불가한 입지.</p>
-  <div class="tbl tbl--cmp">
+  <div class="tbl tbl--list">
     <table>
       <thead><tr><th>구 분</th><th>주요 시설</th><th>세대수</th></tr></thead>
       <tbody>
         <tr><td>청라언덕역 2·3호선</td><td>남산롯데캐슬센트럴스카이 / e편한세상남산 / 청라언덕역서한포레스트 / 대명e나스스카이 / 청라센트럴파크 / 청라힐스자이</td><td class="num">3,680세대</td></tr>
         <tr><td>반월당역 1·2호선</td><td>반월당상징그린코아 / 반월당역서한포레스트</td><td class="num">747세대</td></tr>
         <tr><td>명덕역 1·3호선</td><td>e편한세상명덕역퍼스트마크 (당 사업지)</td><td class="num">1,758세대</td></tr>
-        <tr><th>합 계</th><th>9개 단지</th><td class="num">6,185세대</td></tr>
+        <tr class="sum"><td>합 계</td><td>9개 단지</td><td class="num">6,185세대</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="tbl tbl--cmp">
+  <div class="tbl tbl--list">
     <table>
       <thead><tr><th>구 분</th><th>대구시 전체</th><th>더블역세권 단지</th><th>비율</th></tr></thead>
       <tbody>
